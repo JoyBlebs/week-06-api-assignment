@@ -1,14 +1,10 @@
-import './style.css'
-import './app.js'
+import './style.css';
+import { app } from './app.js';
+
+document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
     <h1>Hello Vite!</h1>
     <div class="card">
       <button id="counter" type="button"></button>
@@ -18,5 +14,7 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+;
 
-setupCounter(document.querySelector('#counter'))
+app.setupCounter(document.querySelector('#counter'))
+});

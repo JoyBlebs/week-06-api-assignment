@@ -27,3 +27,10 @@ async function sendChatRequest(event){
 
 }
 
+export const app = {
+    myForm,
+    responsesContainer,
+    sendChatRequest,
+};
+
+myForm.addEventListener("submit", sendChatRequest);

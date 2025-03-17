@@ -95,3 +95,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* tablet screens with a maximum width of 768px*/
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+  
+/*mobile screens with a maximum width of 480px*/
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+}
+button {
+  padding: 0.5em 1em; 
+  font-size: 0.9em; 
+}
+}
