@@ -1,0 +1,14 @@
+The errors made while working on this project taught me to: 
+
+Check for typos and seemingly minor errors carefully, as small mistakes can break functionality-For example, for a while, I kept receiving an error message about line 8 of my app.js. It took me a few look-overs to see an extra space between the '.' and 'default' hence, event. preventDefault() instead of event.preventDefault, which caused an unexpected error. By deleting that unnecessary space, I got rid of an error that was affecting the functionality of the rest of the code. 
+
+Ensure that all linked files and modules are imported correctly-When setting up my project, I encountered issues with keeping the source folder, as I was unsure of which files were necessary, and how to link the remaining files. After consulting with Frankie and Bertie, I deleted my "main.js, javascript.svg, vite.svg, and setupCounter" files. 
+Additionally, I learnt that importing my app.s and style.css into main.js using works well in a modular JavaScript setup, which helped structure that aspect of the project. Despite applying it to an extent, I still do not fully understand the concept of linking or import functions from app.js into main.js. 
+
+Always check that the backend server is running before making API calls- I completed the project by watching the project kickoff recordings. My console kept returning  a "Failed to fetch" error. This error messgage went away when Frankie directed to fecth response from the deployed server link– this brought it all together, and it made sense that the server was not was running on localhost:8080 at this stage.
+
+Read error messages carefully, as they provide hints on what went wrong-There were always direct mentions or clues on the sources of the errors I had, and reading them thoroughly helped in some instances to fix them. However, there were some errors I was unable to resolve, such "Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    at HTMLDocument.<anonymous>". 
+Another one was "Access to fetch at 'https://server-week-06-api-assignment.onrender.com/chat' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.". In this instance, I am uncertain of how to resolve this error without affecting the security of the api key.
+
+Regarding stretch requirements, I included a few media queries to change the header and button sizes depending on the screen size, given there is not much content on the page yet. Also, I attempted adding a background image by adding an assets folder containing the background image and importing it in main.js however, this did not seem to work, and despite not having much time to figure that out on this project, I hope to figure it out soon.
